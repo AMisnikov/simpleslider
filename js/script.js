@@ -63,13 +63,16 @@ function drawDots () {
 function changeSlide (slide) {
     for (var i = 0; i < slides.length; i++) {
          slides[i].classList.remove('slider-container__slide--active');
+         dotes[i].classList.remove('dots-container__dot--active');
     }
 
     slides[slide].classList.add('slider-container__slide--active'); 
+    dotes[slide].classList.add('dots-container__dot--active'); 
 
-    changeDot(slide);
+    
 }
 
+/*
 function changeDot(dot) {
 
     for (var i = 0; i < dotes.length; i++) {
@@ -79,6 +82,7 @@ function changeDot(dot) {
    dotes[dot].classList.add('dots-container__dot--active'); 
 
 }
+*/
 
 
 
