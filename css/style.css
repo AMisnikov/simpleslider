@@ -30,16 +30,19 @@ body {
 
 .slider-container {
   width: 100%;
-  position: relative; }
+  position: relative;
+  height: 50rem; }
   .slider-container__slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-in-out;
     opacity: 0;
-    visibility: hidden;
-    transition: all .2s;
-    display: none; }
+    visibility: hidden; }
     .slider-container__slide--active {
       opacity: 1;
-      visibility: visible;
-      display: block; }
+      visibility: visible; }
   .slider-container__img {
     display: block;
     height: 50rem;
