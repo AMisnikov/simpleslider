@@ -1,1 +1,1 @@
-# simpleslider
+# Simple Slider
